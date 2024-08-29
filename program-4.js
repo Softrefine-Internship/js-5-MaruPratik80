@@ -11,14 +11,18 @@ class BankAccount {
   deposit(money) {
     this.balance += money;
     console.log(
-      `Bank - Rs ${money} Credited to your Account ${this.accountNo}. Available Balance ${this.balance}`
+      `Bank - ₹${money.toFixed(2)} Credited to your Account ${
+        this.accountNo
+      }. Available Balance ₹${this.balance.toFixed(2)}`
     );
   }
 
   withdraw(money) {
     this.balance -= money;
     console.log(
-      `Bank - Rs ${money} has been Debited to your Account ${this.accountNo}. Available Balance ${this.balance}`
+      `Bank - ₹${money.toFixed(2)} has been Debited to your Account ${
+        this.accountNo
+      }. Available Balance ₹${this.balance.toFixed(2)}`
     );
   }
 }

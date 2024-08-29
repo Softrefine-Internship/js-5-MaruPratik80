@@ -14,6 +14,7 @@ class University {
   }
 
   removeDepartment(dep) {
+    if (!dep) return;
     const index = this.#departments.indexOf(dep);
     this.#departments.splice(index, 1);
   }
